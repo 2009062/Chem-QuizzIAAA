@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.internalassesmentchemquzier.GameController">
+   <children>
+      <MenuBar VBox.vgrow="NEVER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open…" />
+                  <Menu mnemonicParsing="false" text="Open Recent" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As…" />
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences…" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Cut" />
+                  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Select All" />
+                  <MenuItem mnemonicParsing="false" text="Unselect All" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="431.0" layoutY="14.0" text="Time Left:" />
+            <Label layoutX="126.0" layoutY="287.0" text="Hint one:" />
+            <Label layoutX="126.0" layoutY="315.0" text="Hint two:" />
+            <Label fx:id="questionLbl" alignment="TOP_LEFT" layoutX="127.0" layoutY="65.0" prefHeight="90.0" prefWidth="455.0" text="Question:" />
+            <Button fx:id="aBtnID" layoutX="127.0" layoutY="151.0" mnemonicParsing="false" onAction="#aBtn" text="A" />
+            <Button fx:id="bBtnID" layoutX="127.0" layoutY="196.0" mnemonicParsing="false" onAction="#bBtn" text="B" />
+            <Button fx:id="cBtnID" layoutX="127.0" layoutY="237.0" mnemonicParsing="false" onAction="#cBtn" text="C" />
+            <Label fx:id="AnsOneLbl" layoutX="161.0" layoutY="154.0" prefHeight="18.0" prefWidth="402.0" text="Answer:" />
+            <Label fx:id="AnsTwoLbl" layoutX="161.0" layoutY="200.0" prefHeight="18.0" prefWidth="402.0" text="Answer:" />
+            <Label fx:id="AnsThreeLbl" layoutX="161.0" layoutY="240.0" prefHeight="18.0" prefWidth="402.0" text="Answer:" />
+            <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#menuButtonAction" prefHeight="26.0" prefWidth="57.0" text="BACK" />
+            <Label fx:id="hintOneLbl" layoutX="182.0" layoutY="287.0" text="Label" />
+            <Label fx:id="hintTwoLbl" layoutX="182.0" layoutY="315.0" text="Label" />
+            <Label fx:id="timerLbl" layoutX="490.0" layoutY="14.0" text="00:00" />
+            <Label fx:id="correctOrNotLabel" layoutX="490.0" layoutY="210.0" prefHeight="18.0" prefWidth="117.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

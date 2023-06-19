@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "question": "What is helium??",
+    "correctQuestion": "Gas",
+    "hintOne": "Makes your voice sound wierd",
+    "hintTwo": "Is used to make balloons",
+    "optionX": "Liquid",
+    "optionY": "Gas",
+    "optionZ": "Solid"
+  }
+]
